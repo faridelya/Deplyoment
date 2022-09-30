@@ -1,2 +1,2 @@
-Django Deployement on EC2 with Nginx and Supervisor
-https://www.youtube.com/watch?v=vmMyuZSHt3c
+- Django Deployement on EC2 with Nginx and Gunicorn and controlling with Supervisor
+- https://www.youtube.com/watch?v=vmMyuZSHt3c
