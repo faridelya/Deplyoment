@@ -15,3 +15,6 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
  - reboot after installation
  - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:[you can check here ](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#linux)
  
+> export PATH=/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
+> export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
