@@ -15,6 +15,9 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
  - reboot after installation
  - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:[you can check here ](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#linux)
  
-> export PATH=/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
-> export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+ # Removing Nvidia driver and Cuda Toolkit
+ - [Offocial link ](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#removing-cuda-toolkit-and-driver)
+ - step1: to remove Cuda toolkit  > sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" \
+ "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
+  - step2: To remove Nvidia Drivers > sudo apt-get --purge remove "*nvidia*" "libxnvctrl*"
+  -  To clean up the uninstall  > sudo apt-get autoremove
