@@ -7,7 +7,9 @@
 Nginx runs as user "www-data" by default, but the most common Flask WSGI tutorial from Digital Ocean has you use the logged in user for the systemd service file. Change the user that nginx is running as from "www-data" (which is the default) to "ubuntu" in /etc/nginx/nginx.conf if your Flask/wsgi user is "ubuntu" and everything will start working. You can do this with one line in a script:
 
 **sudo sed -i 's/user www-data;/user ubuntu;/' /etc/nginx/nginx.conf**
-
+# Install Nvidia Driver
+ - [Official Link](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html)
+ -  Read Carefully and scroll down to Ubuntu section and follow th instruction for installation
 # Cuda installation with any specific version 
 
   - Old version visit to below link
@@ -16,7 +18,7 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
  - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:[you can check here ](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#linux)
  
  # Removing Nvidia driver and Cuda Toolkit
- - [Offocial link ](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#removing-cuda-toolkit-and-driver)
+ - [Official link ](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#removing-cuda-toolkit-and-driver)
  - step1: to remove Cuda toolkit  
   > sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" \
  "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
