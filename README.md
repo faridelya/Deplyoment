@@ -20,9 +20,15 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
  # Removing Nvidia driver and Cuda Toolkit
  - [Official link ](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#removing-cuda-toolkit-and-driver)
  - step1: to remove Cuda toolkit  
-  > sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" \
+  ```
+  sudo apt-get --purge remove "*cuda*" "*cublas*" "*cufft*" "*cufile*" "*curand*" \
  "*cusolver*" "*cusparse*" "*gds-tools*" "*npp*" "*nvjpeg*" "nsight*" "*nvvm*"
+ ```
  - step2: To remove Nvidia Drivers 
-  > sudo apt-get --purge remove "*nvidia*" "libxnvctrl*"
+  ```
+  sudo apt-get --purge remove "*nvidia*" "libxnvctrl*"
+  ```
  - To clean up the uninstall  
-  > sudo apt-get autoremove
+  ```
+  sudo apt-get autoremove
+  ```
