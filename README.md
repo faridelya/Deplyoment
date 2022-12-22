@@ -47,6 +47,7 @@ sudo lshw -C display
       sudo ubuntu-drivers devices
      ```
    - **output**
+   
    - ```
      == /sys/devices/pci0000:00/0000:00:1c.4/0000:0a:00.0 ==
      modalias : pci:v000010DEd00001292sv0000103Csd000021DAbc03sc02i00
@@ -61,12 +62,12 @@ sudo lshw -C display
      driver   : nvidia-driver-470-server - distro non-free
      driver   : nvidia-driver-390 - distro non-free
      driver   : xserver-xorg-video-nouveau - distro free builtin
-
+     
      ```
-    -  **Let us install recommended driver automatically 460**
-    - ```
-       sudo ubuntu-drivers install
-      ```
+   - **Let us install recommended driver automatically 460**
+   - ```
+     sudo ubuntu-drivers install
+     ```
    
 # Cuda installation with any specific version 
 - Before installtion of Cuda check your GPU compute compitibility in below link 
