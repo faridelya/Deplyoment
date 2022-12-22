@@ -37,7 +37,37 @@ sudo lshw -C display
  -  check nvidia driver version 
  -  ```
     nvidia-smi --query-gpu=driver_version --format=csv
- -  ```
+    ```
+  - **Display all OEM enablement packages which apply to this system**
+  - ```
+     sudo ubuntu-drivers list-oem 
+   ```
+   -  **View all hardware NVidia devices which need drivers and which packages**
+   - ```
+      sudo ubuntu-drivers devices
+   ```
+   - **output**
+   - ```
+     == /sys/devices/pci0000:00/0000:00:1c.4/0000:0a:00.0 ==
+     modalias : pci:v000010DEd00001292sv0000103Csd000021DAbc03sc02i00
+     vendor   : NVIDIA Corporation
+     model    : GK208M [GeForce GT 740M]
+     manual_install: True
+     driver   : nvidia-driver-455 - third-party non-free
+     driver   : nvidia-340 - distro non-free
+     driver   : nvidia-driver-450-server - distro non-free
+     driver   : nvidia-driver-460 - third-party non-free recommended
+     driver   : nvidia-driver-418-server - distro non-free
+     driver   : nvidia-driver-470-server - distro non-free
+     driver   : nvidia-driver-390 - distro non-free
+     driver   : xserver-xorg-video-nouveau - distro free builtin
+
+     ```
+    - **Let us install recommended driver automatically 460**
+    - ```
+     sudo ubuntu-drivers install
+     ```
+   
 # Cuda installation with any specific version 
 - Before installtion of Cuda check your GPU compute compitibility in below link 
 - [**Check for GPU compatibility with Cuda**](https://developer.nvidia.com/cuda-gpus)
