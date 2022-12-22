@@ -36,6 +36,10 @@ sudo lshw -C display
 # Cuda installation with any specific version 
 - Before instaltion of Cuda check your GPU compute compitibility in below link 
 - [**Check for GPU compatibility with Cuda**](https://developer.nvidia.com/cuda-gpus)
+- **outpu**
+![alt text1](https://github.com/faridelya/Deplyoment/blob/42ce6929afadaabd87dff99c82a1c476d7f04bfa/Screenshot%20from%202022-12-22%2011-22-20.png)
+![alt text2](https://github.com/faridelya/Deplyoment/blob/42ce6929afadaabd87dff99c82a1c476d7f04bfa/Screenshot%20from%202022-12-22%2011-22-41.png)
+- the above picture show that My GPU has 3.0 compute compatability but we will deep dive and will see in below link.
 
 - You can also make sure your GPU Architecture and GPU model and GPU name in below link
 - [check for GPU ](https://en.wikipedia.org/wiki/CUDA)
@@ -46,6 +50,8 @@ sudo lshw -C display
 - So above i find out that my GPU has 3.5 compute compatibility 
 - now i will check CUDA version computability with GPU you ccan check in above link  
 - **Output**
+![alt text4](https://github.com/faridelya/Deplyoment/blob/54cb724fa67a19268262413b3c64e207436a6841/Screenshot%20from%202022-12-22%2011-26-47.png)
+- Now we can install different compatible version of cuda  on MY GPU so will Cuda installation in below link
 - Old version visit to below link
  >  [cuda toolkit archives](https://developer.nvidia.com/cuda-toolkit-archive)
  - reboot after installation
