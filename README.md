@@ -63,9 +63,9 @@ sudo lshw -C display
      driver   : xserver-xorg-video-nouveau - distro free builtin
 
      ```
-    - **Let us install recommended driver automatically 460**
+    -  **Let us install recommended driver automatically 460**
     - ```
-     sudo ubuntu-drivers install
+       sudo ubuntu-drivers install
       ```
    
 # Cuda installation with any specific version 
