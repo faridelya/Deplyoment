@@ -94,7 +94,13 @@ sudo lshw -C display
  >  [cuda toolkit archives](https://developer.nvidia.com/cuda-toolkit-archive)
  - reboot after installation
  - Set up the development environment by modifying the PATH and LD_LIBRARY_PATH variables:[you can check here ](https://docs.nvidia.com/cuda/cuda-quick-start-guide/index.html#linux)
- 
+ ```
+ export PATH=/usr/local/cuda-12.0/bin${PATH:+:${PATH}}
+ ```
+ ```
+ export LD_LIBRARY_PATH=/usr/local/cuda-12.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+ ```
  # Removing Nvidia driver and Cuda Toolkit
  - [Official link ](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#removing-cuda-toolkit-and-driver)
  - step1: To remove Cuda toolkit  
