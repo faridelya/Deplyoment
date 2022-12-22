@@ -11,7 +11,7 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
  - [Official Link](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html)
  -  Read Carefully and scroll down to Ubuntu section and follow th instruction for installation
 # Cuda installation with any specific version 
-
+#### [**Check for GPU compatibility with Cuda**](https://developer.nvidia.com/cuda-gpus)
   - Old version visit to below link
  >  [cuda toolkit archives](https://developer.nvidia.com/cuda-toolkit-archive)
  - reboot after installation
