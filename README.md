@@ -40,7 +40,7 @@ sudo lshw -C display
 - You can also make sure your GPU Architecture and GPU model and GPU name in below link
 - [check for GPU ](https://en.wikipedia.org/wiki/CUDA)
 -  I found my GPU like this.
-![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-11-05.png)
+![alt textt](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-11-05.png)
 ![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-10-51.png)
 
 - So above i find out that my GPU has 3.5 compute compatibility 
