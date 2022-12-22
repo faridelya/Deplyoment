@@ -41,11 +41,11 @@ sudo lshw -C display
   - **Display all OEM enablement packages which apply to this system**
   - ```
      sudo ubuntu-drivers list-oem 
-   ```
+    ```
    -  **View all hardware NVidia devices which need drivers and which packages**
    - ```
       sudo ubuntu-drivers devices
-   ```
+     ```
    - **output**
    - ```
      == /sys/devices/pci0000:00/0000:00:1c.4/0000:0a:00.0 ==
@@ -66,7 +66,7 @@ sudo lshw -C display
     - **Let us install recommended driver automatically 460**
     - ```
      sudo ubuntu-drivers install
-     ```
+      ```
    
 # Cuda installation with any specific version 
 - Before installtion of Cuda check your GPU compute compitibility in below link 
