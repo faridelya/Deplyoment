@@ -41,7 +41,7 @@ sudo lshw -C display
 - [check for GPU ](https://en.wikipedia.org/wiki/CUDA)
 -  I found my GPU like this.
 ![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-11-05.png)
-![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-10-51.png))
+![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-10-51.png)
 
 - So above i find out that my GPU has 3.5 compute compatibility 
 - now i will check CUDA version computability with GPU you ccan check in above link  
