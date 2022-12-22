@@ -8,6 +8,7 @@ Nginx runs as user "www-data" by default, but the most common Flask WSGI tutoria
 
 **sudo sed -i 's/user www-data;/user ubuntu;/' /etc/nginx/nginx.conf**
 # Install Nvidia Driver ( [optional because Every CUDA toolkit also ships with an NVIDIA display driver package for convenience](https://docs.nvidia.com/deploy/cuda-compatibility/))
+
  - Before installation find GPU Model by runing below command
 ```
 sudo lshw -C display
@@ -33,6 +34,10 @@ sudo lshw -C display
  
  - [Installation Guide Official Link](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html)
  -  Read Carefully and scroll down to Ubuntu section and follow th instruction for installation
+ -  check nvidia driver version 
+ -  ```
+    nvidia-smi --query-gpu=driver_version --format=csv
+ -  ```
 # Cuda installation with any specific version 
 - Before installtion of Cuda check your GPU compute compitibility in below link 
 - [**Check for GPU compatibility with Cuda**](https://developer.nvidia.com/cuda-gpus)
