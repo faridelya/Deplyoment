@@ -88,7 +88,7 @@ sudo lshw -C display
 - **Output**
 ![alt text4](https://github.com/faridelya/Deplyoment/blob/54cb724fa67a19268262413b3c64e207436a6841/Screenshot%20from%202022-12-22%2011-26-47.png)
 - Now we can install different compatible version of cuda  on MY GPU so will Cuda installation in below link
-- Before Further do we will also check Nvidia Display driver comaptibility with cuda version
+- **Before Further do we will also check Nvidia Display driver comaptibility with cuda version**
 - [vistit her](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html) and check tabel 2 and tabel 3 after that if you fullfill the requirement then you may proceed.
 - Old version visit to below link
  >  [cuda toolkit archives](https://developer.nvidia.com/cuda-toolkit-archive)
