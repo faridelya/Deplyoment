@@ -39,11 +39,11 @@ sudo lshw -C display
 - **outpu**
 ![alt text1](https://github.com/faridelya/Deplyoment/blob/42ce6929afadaabd87dff99c82a1c476d7f04bfa/Screenshot%20from%202022-12-22%2011-22-20.png)
 ![alt text2](https://github.com/faridelya/Deplyoment/blob/42ce6929afadaabd87dff99c82a1c476d7f04bfa/Screenshot%20from%202022-12-22%2011-22-41.png)
-- the above picture show that My GPU has 3.0 compute compatability but we will deep dive and will see in below link.
+- The above picture show that My GPU has 3.0 compute compatability but we will deep dive and will see in below link.
 
 - You can also make sure your GPU Architecture and GPU model and GPU name in below link
 - [check for GPU ](https://en.wikipedia.org/wiki/CUDA)
--  I found my GPU like this.
+- I found my GPU like this.
 ![alt textt](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-11-05.png)
 ![alt text](https://github.com/faridelya/Deplyoment/blob/6daa7b9b81bdb87bb6d5c65ed316f4ee92551027/Screenshot%20from%202022-12-22%2011-10-51.png)
 
@@ -52,7 +52,7 @@ sudo lshw -C display
 - **Output**
 ![alt text4](https://github.com/faridelya/Deplyoment/blob/54cb724fa67a19268262413b3c64e207436a6841/Screenshot%20from%202022-12-22%2011-26-47.png)
 - Now we can install different compatible version of cuda  on MY GPU so will Cuda installation in below link
-- Before Further go move we will also check Nvidia Display driver comaptibility with cuda version
+- Before Further do we will also check Nvidia Display driver comaptibility with cuda version
 - [vistit her](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html) and check tabel 2 and tabel 3 after that if you fullfill the requirement then you may proceed.
 - Old version visit to below link
  >  [cuda toolkit archives](https://developer.nvidia.com/cuda-toolkit-archive)
