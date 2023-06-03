@@ -92,12 +92,10 @@ WantedBy=multi-user.target
    12. Check ```app.sock``` file will be created in you project directory if not check for error use this command ``` journalctl -u app.service``` is a command used to view the logs for the app.service unit. 
    
    13. **Configuring Nginx**
-   here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
- ```
-      sudo nano /etc/nginx/sites-available/app    
- ```
-    
-    ```
+    - here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
+    - ```sudo nano /etc/nginx/sites-available/app```
+    14.
+```
     server {
     listen 80;
     server_name 23.20.159.130;  # here add your own public id of aws ec2 instance better if it is elestic ip
@@ -114,10 +112,9 @@ WantedBy=multi-user.target
     }
 }
 
-
-    ```
-16.  create smylink for nginx ```sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled```  some time if you change in nginx configuration after that symlink may not work then use -f key work in this command to work prop=erly.
-17.  Restart nginx  ```sudo systemctl restart nginx``` aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
+```
+15.  create smylink for nginx ```sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled```  some time if you change in nginx configuration after that symlink may not work then use -f key work in this command to work prop=erly.
+16.  Restart nginx  ```sudo systemctl restart nginx``` aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
 ### IF you made changes in app.service or in application use the following command
 1. 
 ```
