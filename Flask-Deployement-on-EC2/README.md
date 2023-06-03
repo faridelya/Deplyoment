@@ -91,7 +91,7 @@ WantedBy=multi-user.target
    ```
    12.Check ```app.sock``` file will be created in you project directory if not check for error use this command ``` journalctl -u app.service``` is a command used to view the logs for the app.service unit.  
    13. **Configuring Nginx**
-   14.
+  
     ```
     sudo nano /etc/nginx/sites-available/app    # here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
     ```
