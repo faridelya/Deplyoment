@@ -105,7 +105,7 @@ WantedBy=multi-user.target
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/ubuntu/chat/app.sock;
+        proxy_pass http://unix:/home/ubuntu/project/app.sock;
         proxy_connect_timeout 180s;  
         proxy_send_timeout 180s;  
         proxy_read_timeout 600s;
