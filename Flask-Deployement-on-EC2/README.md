@@ -93,9 +93,9 @@ WantedBy=multi-user.target
    
    13.  **Configuring Nginx**
      - here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
-     - ```sudo nano /etc/nginx/sites-available/app```  
+  
     
-   14.
+   14. ```sudo nano /etc/nginx/sites-available/app```
 ```
     server {
     listen 80;
