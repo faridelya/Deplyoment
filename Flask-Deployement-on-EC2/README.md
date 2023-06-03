@@ -11,8 +11,9 @@ Following are the steps for deployement
 - sudo apt install python3-pip python3-dev nginx
 - sudo pip3 install virtualenv    # for enviroment installation
 ```
-5. 
- ``` virtualenv env   # it will create env folder for enviroment inside project folder
+5.
+ ```
+ virtualenv env   # it will create env folder for enviroment inside project folder
  ```
  6. 
  ``` source env/bin/activate   # activate enviroment 
