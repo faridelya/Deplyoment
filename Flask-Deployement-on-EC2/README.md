@@ -89,12 +89,14 @@ WantedBy=multi-user.target
    sudo systemctl start app
    sudo systemctl enable app
    ```
-   12.Check ```app.sock``` file will be created in you project directory if not check for error use this command ``` journalctl -u app.service``` is a command used to view the logs for the app.service unit.  
+   12. Check ```app.sock``` file will be created in you project directory if not check for error use this command ``` journalctl -u app.service``` is a command used to view the logs for the app.service unit. 
+   
    13. **Configuring Nginx**
-  
+   here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
     ```
-    sudo nano /etc/nginx/sites-available/app    # here we will create configuration file for nginx server which willhandle incomming request then it will send to gunicron through app.sock file
+    sudo nano /etc/nginx/sites-available/app    
     ```
+    
     15. 
     ```
     server {
