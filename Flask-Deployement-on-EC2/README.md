@@ -180,7 +180,15 @@ WantedBy=multi-user.target
 
 ```
 15.  create smylink for nginx ```sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled```  some time if you change in nginx configuration after that symlink may not work then use -f key work in this command to work prop=erly.
-16.  Restart nginx  ```sudo systemctl restart nginx``` aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
+16.  Restart nginx  
+```
+sudo systemctl restart nginx
+``` 
+aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
+18.  For checking nginx error log.
+   ```
+   tail -f /var/log/nginx/error.log
+   ```
 ### IF you made changes in app.service or in application use the following command
 1. 
 ```
