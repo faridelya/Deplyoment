@@ -185,6 +185,7 @@ WantedBy=multi-user.target
 sudo systemctl restart nginx
 ``` 
 aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
+
 18.  For checking nginx error log.
    ```
    tail -f /var/log/nginx/error.log
