@@ -45,8 +45,9 @@ Following are the steps for deployement
    - select Ip Schema  0.0.0.0
    ```
    9. **Creating a systemd service for deployment**
+       you can give any name in my case app.service
    ```
-   sudo nano /etc/systemd/system/app.service   # you can give any name in my case app.service
+   sudo nano /etc/systemd/system/app.service   
    ```
    10.
    ```
@@ -84,11 +85,31 @@ ExecStart=/home/ubuntu/project/env/bin/gunicorn --workers 3 --bind unix:/home/ub
 [Install]
 WantedBy=multi-user.target
    ```
+or check other sample example.
+```
+[Unit]
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/V2_chatbot/src/
+Environment="PATH=/home/ubuntu/V2_chatbot/env/bin"
+ExecStart=/home/ubuntu/V2_chatbot/env/bin/gunicorn -w 2 --bind unix:/home/ubuntu/V2_chatbot/app.sock -m 007 --timeout 60 --error-logfile /home/ubuntu/V2_chatbot/gunicorn_error.log wsgi:app
+
+[Install]
+WantedBy=multi-user.target
+```
    11. For starting app. service file just execute the following
    ```
    sudo systemctl start app
    sudo systemctl enable app
    ```
+### IF you made changes in app.service then use below command for changes
+```
+sudo systemctl daemon-reload
+sudo systemctl restart app.service
+```
    12. Check ```app.sock``` file will be created in you project directory if not check for error use this command ``` journalctl -u app.service``` is a command used to view the logs for the app.service unit. 
    
    13.  **Configuring Nginx**
@@ -114,6 +135,22 @@ WantedBy=multi-user.target
 }
 
 ```
+if you are not socketio in application and want to communicate guncorn and nginx by sock then use this.
+```                                                                              
+server {
+    listen 80;
+    server_name 23.22.159.136;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/ubuntu/V2_chatbot/app.sock;
+        proxy_send_timeout 180s;
+        proxy_read_timeout 600s;
+
+    }
+}
+
+```
 15.  create smylink for nginx ```sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled```  some time if you change in nginx configuration after that symlink may not work then use -f key work in this command to work prop=erly.
 16.  Restart nginx  
 ```
@@ -125,10 +162,12 @@ aslo allow nginx in firewall ```sudo ufw allow 'Nginx Full'```
    ```
    tail -f /var/log/nginx/error.log
    ```
-### IF you made changes in app.service or in application use the following command
+### IF you made changes in nginx use the below command 
 1. 
 ```
-sudo systemctl daemon-reload
-sudo systemctl restart app
 sudo systemctl restart nginx
+```
+check status of inginx use this.
+```
+sudo systemctl status nginx
 ```
