@@ -43,6 +43,7 @@ sudo lshw -C display
      sudo ubuntu-drivers list-oem 
     ```
    -  **View all hardware NVidia devices which need drivers and which packages**
+   -  You can install by following below command if below instruction make trouble then use this instruction  [link](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#ubuntu-lts)
    - ```
       sudo ubuntu-drivers devices
      ```
